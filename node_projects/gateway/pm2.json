@@ -1,0 +1,18 @@
+{
+    "apps": [
+        {
+            "name": "brainControl",
+            "script": "./server.js",
+            "instances": 3,
+            "exec_mode": "cluster",
+            "error_file": "../logs/error_file",
+            "out_file": "../logs/out_file",
+            "pid_file": "../logs/reportes_ac.pid",
+            "autorestart": false,
+            "env": {
+                "NODE_ENV": "production"
+            }
+        }
+    ]
+}
+

@@ -1,0 +1,5 @@
+FROM node:8.14-alpine
+RUN npm -g install nodemon@1.18.7
+RUN npm -g install pm2@3.2.2
+WORKDIR /opt/projects/gateway/app
+CMD npm install && pm2 start ../pm2.json && pm2 logs -f brainControl 

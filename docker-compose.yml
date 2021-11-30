@@ -1,0 +1,19 @@
+version: '3.0'
+services:
+  node:
+    build : .
+    container_name: brain-control-ares
+    ports:
+      - 7879:3000
+    volumes:
+      - ./node_projects:/opt/projects
+    links:
+      - redis-ares
+  redis:
+    container_name: redis-ares
+    image : redis:5.0.3-alpine
+networks:
+  default:
+    external: true
+    name: ares-shop
+

@@ -1,0 +1,31 @@
+{
+  "name": "controlBSFT",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --exit"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "cookie-parser": "^1.4.3",
+    "helmet": "^3.15.0",
+    "md5": "^2.2.1",
+    "mocha": "^5.2.0",
+    "moleculer": "^0.13.5",
+    "moleculer-web": "^0.8.5",
+    "mongodb": "^3.1.10",
+    "nats": "^1.2.2",
+    "password-hash": "^1.2.2",
+    "random-bytes": "^1.0.0",
+    "redis": "^2.8.0",
+    "sha1": "^1.1.1",
+    "sha256-file": "^1.0.0",
+    "soap": "^0.25.0",
+    "xml": "^1.0.1",
+    "xml-js": "^1.6.9",
+    "xml2js": "^0.4.19"
+  }
+}
